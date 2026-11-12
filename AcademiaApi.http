@@ -1,0 +1,75 @@
+@base = http://localhost:5159/api
+
+### ================= INSTRUCTORES =================
+
+### Crear instructor
+POST {{base}}/Instructores
+Content-Type: application/json
+
+{
+  "nombres": "Carlos",
+  "apellidos": "Ramírez Torres",
+  "especialidad": "Desarrollo Web",
+  "email": "carlos.ramirez@academia.com",
+  "activo": true
+}
+
+### Listar instructores
+GET {{base}}/Instructores
+
+### Listar solo instructores activos
+GET {{base}}/Instructores?activo=true
+
+### Obtener instructor por Id
+GET {{base}}/Instructores/1
+
+### Actualizar instructor
+PUT {{base}}/Instructores/1
+Content-Type: application/json
+
+{
+  "nombres": "Carlos Alberto",
+  "apellidos": "Ramírez Torres",
+  "especialidad": "Full Stack .NET",
+  "email": "carlos.ramirez@academia.com",
+  "activo": true
+}
+
+### Eliminar instructor
+DELETE {{base}}/Instructores/1
+
+
+### ================= ESTUDIANTES =================
+
+### Crear estudiante
+POST {{base}}/Estudiantes
+Content-Type: application/json
+
+{
+  "nombres": "María",
+  "apellidos": "López Quispe",
+  "email": "maria.lopez@gmail.com",
+  "telefono": "987654321",
+  "activo": true
+}
+
+### Listar estudiantes
+GET {{base}}/Estudiantes
+
+### Obtener estudiante por Id
+GET {{base}}/Estudiantes/1
+
+### Actualizar estudiante
+PUT {{base}}/Estudiantes/1
+Content-Type: application/json
+
+{
+  "nombres": "María Elena",
+  "apellidos": "López Quispe",
+  "email": "maria.lopez@gmail.com",
+  "telefono": "999888777",
+  "activo": true
+}
+
+### Eliminar estudiante
+DELETE {{base}}/Estudiantes/1

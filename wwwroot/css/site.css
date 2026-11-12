@@ -1,0 +1,60 @@
+body {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+.navbar-brand i {
+    font-size: 1.3rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.acciones {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.card-resumen {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-resumen:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-resumen .icono {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.card-resumen .total {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.toast-container {
+    z-index: 1100;
+}
